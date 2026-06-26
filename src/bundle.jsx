@@ -383,7 +383,7 @@ const HabitsView = () => {
   const toggleHistory = (habitId, dayIndex) => {
       setHabits(habits.map(h => {
           if (h.id === habitId) {
-              const newHistory = [...h.history];
+              const newHistory = [h.history];
               newHistory[dayIndex] = !newHistory[dayIndex];
               const newStreak = newHistory.filter(Boolean).length; 
               return { ...h, history: newHistory, currentStreak: newStreak };
