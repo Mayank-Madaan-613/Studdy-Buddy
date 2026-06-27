@@ -40,7 +40,6 @@ StudySpace is designed as a standalone, high-performance static frontend applica
 - **Animations:** [Framer Motion](https://www.framer.com/motion/) for state-transition animations, slide-overs, and hover/active states.
 - **Icons:** Inline SVG Icons designed with [Heroicons](https://heroicons.com/) style.
 - **Typography:** [Inter Font Family](https://fonts.google.com/specimen/Inter) via Google Fonts.
-- **Deployment & Server:** Nginx (running on Alpine Linux inside Docker) serving static assets.
 
 ---
 
@@ -67,29 +66,11 @@ STUDY-BUDDY/
 ---
 
 ## 🚀 Getting Started
-
-### Method 1: Run Locally (Web Browser)
 Since StudySpace runs entirely client-side, you can open the project directly in your browser without any installation:
-1. use the link:
+1. use the link: https://study-app-700816126722.us-central1.run.app/
 2. Interact with the application immediately!
 
-### Method 2: Run with Docker
-The repository includes a ready-to-use Dockerfile configured with Nginx Alpine to host the application.
 
-1. **Build the Docker Image:**
-   ```bash
-   docker build -t study-buddy src/
-   ```
-
-2. **Run the Container:**
-   ```bash
-   docker run -d -p 8080:8080 --name study-buddy-app study-buddy
-   ```
-
-3. **Access the App:**
-   Open your browser and navigate to `http://localhost:8080`.
-
----
 
 ## 🔧 Architecture & Customization
 
@@ -99,5 +80,3 @@ The repository includes a ready-to-use Dockerfile configured with Nginx Alpine t
 
 ---
 
-## 📝 License
-This project is open-source and available under the MIT License.
