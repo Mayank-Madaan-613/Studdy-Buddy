@@ -1,2 +1,2 @@
-bootcamp 
-src/Dockerfile
+dist/
+node_modules/
